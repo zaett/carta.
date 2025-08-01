@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carta Virtual con Música</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fef6e4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .carta {
+      background-color: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 600px;
+      text-align: center;
+    }
+
+    h1 {
+      color: #ff5c8a;
+    }
+
+    p {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .btn-play {
+      background-color: #1db954;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .btn-play:hover {
+      background-color: #17a44b;
+    }
+
+    .spotify-embed {
+      margin-top: 30px;
+      display: none; /* Oculto al principio */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="carta">
+    <h1>Amor de mi vida</h1>
+    <p>
+      Sé que dices que las fechas no son importantes para ti, pero no quería dejar pasar la oportunidad de decirte lo mucho que significas para mí en un día como hoy. Te lo he dicho mil veces y te lo voy a repetir toda mi vida, te amo con todo mi corazón, eres todo para mí y no hay nada que anhele más en esta vida que estar a tu lado.
+
+Desde que te conocí, siento que mi vida cambió por completo, pasé de no querer vivir y sentir que no tenía futuro, a desear pasar el resto de mi vida contigo e imaginar cómo sería un futuro a tu lado, llegaste justo cuando más te necesitaba y eres la razón por la que sigo esforzándome por mejorar.
+
+Sueño cada día con el momento en que nos casemos, y le pido a Dios que nos ayude a llegar a ese día y que nos bendiga para poder tener una vida juntos. De verdad, espero algún día poder devolverte todo lo que has hecho por mí, tal vez no te des cuenta, pero desde que llegaste has mejorado cada uno de mis días, me has dado paz, seguridad y un amor que nunca imaginé merecer. Por eso, estaré toda mi vida en deuda contigo.
+
+Voy a hacer hasta lo imposible por ayudarte a cumplir cada uno de tus sueños y darte todo lo que necesites, sabes que puedes contar conmigo para lo que sea, y sabes que haría cualquier cosa por ti, mi bebé.
+
+Me encantaría que existiera una palabra o una forma de decirte cuánto te amo mi vida, porque incluso el "yo te cielo" de Frida Kahlo se queda corto para expresar lo que siento por ti. Siempre seré tuyo mi amor, estoy completamente entregado a ti, te amo demasiado, gracias por hacerme el hombre más afortunado del mundo.
+    </p>
+    <p>
+      Acá está la playlist de canciones que me hacen pensar en ti, aún faltan muchas más, pero ya quería enviartela. ❤️
+    </p>
+
+    <iframe style="border-radius:12px" 
+    src="https://open.spotify.com/embed/playlist/1Z78WLQptThhMm31JiNYqR?utm_source=generator&theme=0" 
+    width="100%" height="152" frameBorder="0" 
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+    loading="lazy">
+  </iframe>
+      
+    </div>
+  </div>
+
+  <script>
+    function mostrarSpotify() {
+      const player = document.getElementById('spotifyPlayer');
+      player.style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
